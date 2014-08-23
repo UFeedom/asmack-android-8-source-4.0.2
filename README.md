@@ -16,6 +16,7 @@ Smack is split in various subprojects. A typical XMPP over TCP project should us
 Changes from Smack 3.4 to 4.0
  
 Renamed Connection to XMPPConnection, which is subclassed by XMPPTCPConnection and XMPPBOSHConnection. You can use find -type f -name "*.java" |xargs sed -i 's;\([^A-Za-z]\)Connection\([^A-Za-z]\);\1XMPPConnection\2;g' to rename Connection to XMPPConnection in your java code.
+
 Moved provider and packages Classes to their respective package, i.e. org.jivesoftware.<feature>.(package|provider)
 find -type f -name "*.java" |xargs sed -i 's;smackx.ServiceDiscoveryManager;smackx.disco.ServiceDiscoveryManager;'
 find -type f -name "*.java" |xargs sed -i 's;smackx.packet.VCard;smackx.vcardtemp.packet.VCard;'
